@@ -17,8 +17,8 @@ int main(){
                 if (s[i] == '1') am[i]++;
             }
         }
-        for (int i = 0; i < n; i++){
-            if (am[i] % 2 == 1) {cout << "NO" << endl; b = 0;}
+        for (int i = 0; i < k; i++){
+            if (am[i] % 2 == 1) {cout << "NO" << endl; b = 0; break;}
         }
         if (b) cout << "YES" << endl;
         int am[11]={0};
