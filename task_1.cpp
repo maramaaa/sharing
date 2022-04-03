@@ -21,6 +21,6 @@ int main(){
             if (am[i] % 2 == 1) {cout << "NO" << endl; b = 0;}
         }
         if (b) cout << "YES" << endl;
-        int am[11];
+        int am[11]={0};
     }
 }
