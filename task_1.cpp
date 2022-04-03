@@ -5,7 +5,7 @@ using namespace std;
 
 int main(){
     int am[11]={0};
-    int t, n, k;
+    int t, n, k, ch=0;
     string s;
     cin >> t;
     bool b = 1;
@@ -18,7 +18,8 @@ int main(){
             }
         }
         for (int i = 0; i < k; i++){
-            if (am[i] % 2 == 1) {cout << "NO" << endl; b = 0; break;}
+            if (am[0] % 2 == 1 && i==0) ch = am[i];
+            else if (am[i] % 2 == 1 && (ch!=am[i] or ch!=0)) {cout << "NO" << endl; b = 0; break;}
         }
         if (b) cout << "YES" << endl;
         int am[11]={0};
